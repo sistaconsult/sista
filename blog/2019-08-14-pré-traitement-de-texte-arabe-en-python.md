@@ -8,7 +8,7 @@ summary: >-
   des compétences incontournables pour tous les spécialistes des données.
 tags:
   - Python
-date: 2019-08-14T21:49:00.113Z
+date: 2019-08-13T21:49:00.000Z
 ---
 ![](/uploads/undraw_file_bundle_xl7g.png)
 
