@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 module.exports = {
   siteName: 'Systèmes d’informations et Statistiques',
   siteDescription: 'Systèmes d’informations et Statistiques',
-  siteUrl: 'https://sista.netlify.com',
+  siteUrl: 'https://sistaconsult.tech',
   plugins: [  
     {
       use: '@gridsome/source-filesystem',
@@ -49,13 +49,13 @@ module.exports = {
         contentTypeName: 'Post',
         feedOptions: {
           title: 'Systèmes d’informations et Statistiques Blog',
-          feed_url: 'https://sista.netlify.com/rss.xml',
-          site_url: 'https://sista.netlify.com/'
+          feed_url: 'https://sistaconsult.tech/rss.xml',
+          site_url: 'https://sistaconsult.tech/'
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.summary,
-          url: 'https://sista.netlify.com' + node.path,
+          url: 'https://sistaconsult.tech' + node.path,
           author: 'Andre Madarang',
           date: node.date
         }),

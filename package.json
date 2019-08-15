@@ -1,5 +1,5 @@
 {
-  "name": "andremadarang",
+  "name": "sistaconsult",
   "private": true,
   "scripts": {
     "build": "gridsome build",

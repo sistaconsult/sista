@@ -5,9 +5,9 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "static/uploads"
 public_folder: "/uploads"
-site_url: https://sista.netlify.com
-display_url: https://sista.netlify.com
-logo_url: https://sista.netlify.com/assets/static/method-draw-image.db76d48.c0f2dd6.svg
+site_url: https://sistaconsult.tech
+display_url: https://sistaconsult.tech
+logo_url: https://sistaconsult.tech/assets/static/method-draw-image.db76d48.c0f2dd6.svg
 
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
