@@ -5,8 +5,8 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "static/uploads"
 public_folder: "/uploads"
-site_url: https://sistaconsult.tech
-display_url: https://sistaconsult.tech
+site_url: https://www.sistaconsult.tech
+display_url: https://www.sistaconsult.tech
 logo_url: https://www.sistaconsult.tech/assets/static/method-draw-image.db76d48.c0f2dd6.svg
 
 collections:
