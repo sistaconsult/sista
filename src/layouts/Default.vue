@@ -32,11 +32,7 @@
             <g-link v-else to="/#projects" class="text-copy-primary hover:text-gray-600">Projets</g-link>
           </li>
         
-          <li class="mr-8 mb-6 lg:mb-0">
-            <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'"
-              class="text-copy-primary hover:text-gray-600">Contact</a>
-            <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
-          </li>
+          
           <li>
             <g-link to="/blog" class="text-copy-primary hover:text-gray-600">Articles</g-link>
           </li>
