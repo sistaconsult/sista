@@ -36,3 +36,61 @@ Vue.component('todo-item', {
 2. **Liaison de données dans Vue**
 
 Vue.js est en effet très inspiré par AngularJS en termes de liaisons de données, c’est pourquoi il est très facile d’apprendre Vue.js quand nous avons déjà appris AngularJS. Si dans AngularJS, nous connaissons ng-bind, dans Vue.js, nous savons v: bind, voici quelques liaisons de données dans Vue.js:
+
+1. Relier les données en vue
+
+Vue.js utilise la syntaxe {{}} comme indiqué dans l'image ci-dessus. Avec la syntaxe, cela signifie que nous souhaitons afficher les données existantes de notre code Javascript dans le HTML.
+
+```html
+<div id="app">
+  {{ message }}
+</div>
+```
+
+2. Liaison d'attribut
+
+Comme mentionné précédemment, dans Vue.js, nous utilisons v-bind pour lier au HTML. Donc, si nous regardons l'image ci-dessus, nous voulons ajouter le titre de l'attribut à la plage en utilisant des données dynamiques à partir de JavaScript. En principe, v-bind peut être appliqué à divers attributs en HTML afin que nous puissions rencontrer de nombreuses variantes de v-bind comme v-bind: src, v-bind: classe, v-bind: alt, etc. Vue.js fournit également des raccourcis nous permettant de définir v-bind en HTML en supprimant la partie v-bind, afin que nous puissions utiliser des raccourcis tels que: title,: src,: class,: alt, etc.
+
+```html
+<div id="app-2">
+  <span v-bind:title="message">
+    Hover your mouse over me for a few seconds
+    to see my dynamically bound title!
+  </span>
+</div>
+```
+
+3. Liaison de données bidirectionnelle
+
+Comme AngularJS, Vue.js fournit également une fonctionnalité de liaison de données bidirectionnelle, ce qui signifie que toute modification de Javascript affectera la vue HTML et inversement, les modifications apportées à la vue HTML affecteront ou modifieront également la valeur de Javascript. Dans Vue.js, nous utilisons v-model pour effectuer des liaisons bidirectionnelles généralement attachées à un élément HTML, comme l'image suivante:
+
+```html
+<div id="app-6">
+  <p>{{ message }}</p>
+  <input v-model="message">
+</div>
+```
+
+4. Liaison à un événement
+
+Pour appeler un événement que nous avons créé en Javascript, Vue.js utilise v-on dans le modèle HTML suivi du hook d’événement à ajouter. Nous pouvons donc utiliser diverses variantes de v-on, telles que v-on: clic, v-on: flou, v-on: focus, v-on: keyup, etc.
+
+```html
+<div id="example-3">
+  <button v-on:click="say('hi')">Say hi</button>
+  <button v-on:click="say('what')">Say what</button>
+</div>
+```
+
+```javascript
+new Vue({
+  el: '#example-3',
+  methods: {
+    say: function (message) {
+      alert(message)
+    }
+  }
+})
+```
+
+Vue.js fournit également un raccourci pour faire cette liaison d'événement en utilisant @, afin que nous puissions abréger des choses telles que: @click, @ blur, @ focus, etc.
